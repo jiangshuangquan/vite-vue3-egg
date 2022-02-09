@@ -42,13 +42,11 @@ export default defineComponent({
             axios
                 .get('/users/XPoet')
                 .then((response) => {
-                    console.log('response: ', response.data)
                     userInfo.value = response.data
                     loading.value = false
                 })
-                .catch((error) => {
+                .catch(() => {
                     loading.value = false
-                    console.error(error)
                 })
         }
 

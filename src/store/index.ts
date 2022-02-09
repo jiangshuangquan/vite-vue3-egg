@@ -3,6 +3,7 @@ import { createStore, Store, useStore as baseUseStore } from 'vuex'
 import RootStateTypes, { AllStateTypes } from './types'
 
 import numFactoryModule from './modules/NumFactory'
+
 export const modules = {
     numFactoryModule
 }

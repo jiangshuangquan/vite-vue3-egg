@@ -1,7 +1,7 @@
 import { Getters, VuexFunc } from './types'
 import { useStore } from '../../store'
 
-//对于store的再次封装，让其有ts提示
+// 对于store的再次封装，让其有ts提示
 export const useOwnStore = () => {
     const store = useStore()
     return store

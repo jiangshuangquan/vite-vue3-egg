@@ -39,10 +39,10 @@ axiosInstance.interceptors.request.use(
         // }
         return config
     },
-    (error) => {
+    (error: any) => {
         // 错误抛到业务代码
-        error.data = {}
-        error.data.msg = '服务器异常，请联系管理员！'
+        // error.data = {}
+        // error.data.msg = '服务器异常，请联系管理员！'
         return Promise.resolve(error)
     }
 )
@@ -59,7 +59,7 @@ axiosInstance.interceptors.response.use(
     },
     (error) => {
         if (axios.isCancel(error)) {
-            console.log('repeated request: ' + error.message)
+            // console.log(`repeated request: ${error.message}`)
         } else {
             const originalRequest = error.config
             // 网络不可用
@@ -70,6 +70,7 @@ axiosInstance.interceptors.response.use(
             else if (
                 error.code === 'ECONNABORTED' &&
                 error.message.indexOf('timeout') !== -1 &&
+                // eslint-disable-next-line no-underscore-dangle
                 !originalRequest._retry
             ) {
                 ElMessage.error('请求超时，请稍后重试！！！')

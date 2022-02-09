@@ -7,6 +7,7 @@
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
+
 const router = useRouter()
 const goGitHub = () => {
     window.open('https://github.com/jiangshuangquan/vite-vue3-egg')

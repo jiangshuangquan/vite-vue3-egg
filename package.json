@@ -19,7 +19,7 @@
         "ci": "npm run lint && npm run cov && npm run tsc",
         "autod": "autod",
         "lint": "eslint . --ext .ts",
-        "fix": "eslint --fix",
+        "fix": "eslint --fix ./src --ext .vue,.js,.ts",
         "clean": "ets clean",
         "build": "vue-tsc --noEmit && vite build",
         "vite": "vite"
