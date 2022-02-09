@@ -11,6 +11,8 @@ logs/
 *.lock
 *.js
 !.autod.conf.js
+!.cz-config.js
+!.commitlint.config.js
 
 app/**/*.js
 test/**/*.js
