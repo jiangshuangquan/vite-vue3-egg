@@ -1,18 +1,16 @@
 <template>
     <div class="header">
-        <div class="title" @click="router.push('/')">
-            Vite2.x + Vue3.x + TypeScript
-        </div>
+        <div class="title" @click="router.push('/')">Vite2.x + Vue3.x + TypeScript</div>
         <div class="go-github" @click="goGitHub">GitHub</div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router';
-const router = useRouter();
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const goGitHub = () => {
-    window.open('https://github.com/jiangshuangquan/vite-vue3-egg');
-};
+    window.open('https://github.com/jiangshuangquan/vite-vue3-egg')
+}
 </script>
 
 <style scoped lang="less">
