@@ -35,10 +35,10 @@ export default (appInfo: EggAppInfo) => {
     config.sequelize = {
         dialect: 'mysql',
         host: 'localhost',
-        username: 'integration',
-        password: 'Qiyuesuo#2020',
+        username: '用户名',
+        password: '密码',
         port: 3306,
-        database: 'integration'
+        database: '数据库名'
     }
 
     // add your special config in here
