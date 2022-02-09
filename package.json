@@ -28,10 +28,13 @@
         "axios": "^0.25.0",
         "egg": "^2.6.1",
         "egg-scripts": "^2.6.0",
+        "egg-sequelize": "^6.0.0",
         "egg-view-assets": "^1.8.0",
         "egg-view-nunjucks": "^2.3.0",
         "element-plus": "^2.0.1",
+        "mysql2": "^2.3.3",
         "normalize.css": "^8.0.1",
+        "sequelize-cli": "^6.4.1",
         "vue": "^3.2.25",
         "vue-router": "^4.0.12",
         "vuex": "^4.0.2"

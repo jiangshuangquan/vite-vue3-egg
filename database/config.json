@@ -1,0 +1,18 @@
+{
+    "development": {
+        "username": "root",
+        "password": "qiyuesuo#2020",
+        "database": "photos",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "timezone": "+08:00",
+        "define": {
+            "charset": "utf8",
+            "dialectOptions": {
+                "collate": "utf8_general_ci"
+            }
+        }
+    },
+    "test": {},
+    "production": {}
+}

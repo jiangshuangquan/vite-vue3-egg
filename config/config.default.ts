@@ -33,6 +33,15 @@ export default (appInfo: EggAppInfo) => {
     },
   };
 
+  config.sequelize = {
+    dialect: 'mysql',
+    host: 'localhost',
+    username: 'integration',
+    password: 'Qiyuesuo#2020',
+    port: 3306,
+    database: 'integration',
+  };
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: '',
